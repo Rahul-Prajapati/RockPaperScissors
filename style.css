@@ -6,13 +6,6 @@ body {
     background: #8CC461;
 }
 
-
-/* .hidden1 {
-    visibility: hidden;
-} */
-
-
-
 .container {
     display: flex;
     align-content: center;
@@ -382,7 +375,7 @@ li::marker {
     align-items: center;
 }
 
-@keyframes scaleBgOnce {
+@keyframes bganimation {
     0% {
       transform: scale(0.5); 
       opacity: 0; 
@@ -402,7 +395,7 @@ li::marker {
     width: 504px;
     height: 297px;
     margin-top: 86px;
-    animation: scaleBgOnce 3s ease-in-out forwards;
+    animation: bganimation 3s ease-in-out forwards;
 }
 
 .abs{
