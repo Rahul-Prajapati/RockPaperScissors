@@ -1,0 +1,513 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background: #8CC461;
+}
+
+
+/* .hidden1 {
+    visibility: hidden;
+} */
+
+
+
+.container {
+    display: flex;
+    align-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.headerBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    height: 158px;
+    margin-top: 62px;
+    border-radius: 13px;
+    border: 2px solid white;
+    width: 800px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    margin: 14px;
+    justify-content: space-around;
+    color: white;
+}
+
+.header-left p {
+    height: 37px;
+    font-family: Roboto;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 46.88px;
+    letter-spacing: 0.1em;
+    text-align: left;
+
+
+}
+
+.header-right {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 15px;
+    gap: 29px;
+
+}
+
+.header-right div {
+    background-color: #FFFFFF;
+    height: 128px;
+    border-radius: 9px;
+    width: 139px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+
+}
+
+.header-right p {
+    align-self: center;
+    justify-content: center;
+    color: #656565;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 19.92px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-top: 7px;
+    font-family: Roboto;
+}
+
+.score {
+    font-size: 68px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.choosediv {
+    margin: 20px;
+}
+
+.twocircle {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+}
+
+.onecircle {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    margin-top: 100px;
+}
+
+.line {
+    position: relative;
+    width: 160px;
+    top: 79px;
+    border-top: 15px solid black;
+}
+
+.sl {
+    position: absolute;
+    border-top: 15px solid black;
+    width: 160px;
+    top: 452px;
+}
+
+.left-line {
+    transform: rotate(60deg);
+    left: 605px;
+}
+
+.right-line {
+    transform: rotate(-60deg);
+    left: 770px;
+}
+
+.circle-wh {
+    width: 140px;
+    height: 140px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.scissors img {
+    transform: rotate(-5.27deg);
+}
+
+.rock {
+    border: 16px solid #0074B6
+}
+
+.scissors {
+    border: 16px solid #BD00FF
+}
+
+.paper {
+    border: 16px solid #FFA943
+}
+
+
+.btn-section {
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    height: 40px;
+    border-radius: 10px;
+    border: 2px;
+    cursor: pointer;
+    width: 119px;
+}
+
+
+.rules-section {
+    position: absolute;
+    width: 303px;
+    height: 367px;
+    top: 240px;
+    left: 1200px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.rulesVisibility {
+    display: none;
+}
+
+.x-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 31px;
+    left: 260px;
+    border-radius: 5px;
+    background: #FF0000;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    cursor: pointer;
+}
+
+
+.font-x {
+    margin: 0px;
+    font-family: Dangrek, cursive;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 79.49px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.rules {
+    color: white;
+    width: 278px;
+    height: 325px;
+    top: 330px;
+    left: 964px;
+    border-radius: 13px;
+    border: 7px;
+    background: #004429;
+    border: 7px solid #FFFFFF;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.rules h3 {
+    font-family: Roboto;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 33.98px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li::marker {
+    color: #FFD600;
+}
+
+.btn {
+    font-family: Roboto;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24.61px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    background-color: #8CC461;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.showresult {
+    display: flex;
+    margin-left: -45px;
+    margin-top: 90px;
+}
+
+
+.picked {
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 19.92px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.bg-win3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    top: 310px;
+    left: 218px;
+    background: #2E9A2563;
+    border-radius: 50%;
+    box-shadow: 0px 1px 62px 0px #00000021;
+
+}
+
+.bg-win2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    top: 335px;
+    left: 240px;
+    background: #1DA82BC9;
+    border-radius: 50%;
+
+}
+
+.bg-win1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    top: 360px;
+    left: 265px;
+    gap: 0px;
+    opacity: 1;
+    background: #3B6720;
+    border-radius: 50%;
+    margin-top: 5px;
+
+}
+
+.resultMessages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner-messages {
+    font-family: Roboto;
+    font-size: 39px;
+    font-weight: 800;
+    line-height: 45.7px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.againstmessage {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 29.3px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.btn-againPlay {
+    margin-top: 20px;
+    width: 174px;
+    height: 44px;
+    top: 547px;
+    left: 570px;
+    border-radius: 9px;
+    background: #FFFFFF;
+    color: #6B6B6B;
+
+}
+
+
+.final-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes scaleBgOnce {
+    0% {
+      transform: scale(0.5); 
+      opacity: 0; 
+    }
+    50% {
+      transform: scale(0.8); 
+      opacity: 0.8; 
+    }
+    100% {
+      transform: scale(1); 
+      opacity: 1; 
+    }
+  }
+
+.celebration {
+    position: relative;
+    width: 504px;
+    height: 297px;
+    margin-top: 86px;
+    animation: scaleBgOnce 3s ease-in-out forwards;
+}
+
+.abs{
+    position: absolute;
+}
+
+#star1 { 
+    width: 115px;
+    height: 115px;
+    top: 112px;
+}
+
+#star2 {
+    width: 103px;
+    height: 103px;
+    left: 332px;
+}
+
+#star3 {
+    width: 32px;
+    height: 32px;
+    left: 115px;
+}
+
+#star4 {
+    width: 32px;
+    height: 32px;
+    top: 36px;
+    left: 222px;
+}
+
+#star5 {
+    width: 32px;
+    height: 32px;
+    top: 265px;
+    left: 108px;
+}
+
+#star6 {
+    width: 130px;
+    height: 130px;
+    top: 160px;
+    left: 374px;
+}
+
+#star7 {
+    width: 32px;
+    height: 32px;
+    top: 87px;
+    left: 442px;
+}
+
+#star8 {
+    width: 32px;
+    height: 32px;
+    top: 36px;
+    left: 222px;
+}
+
+#star9 {
+    width: 68px;
+    height: 68px;
+    top: 51px;
+    left: 72px;
+}
+
+
+#tropy {
+    width: 200.43px;
+    height: 201px;
+    top: 103px;
+    left: 152px;
+}
+
+.wishing {
+    font-family: Roboto;
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 106.64px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.declaration {
+    font-family: Roboto;
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 48.05px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#playagain {
+    width: 174px;
+    height: 44px;
+    margin-top: 58px;
+    border-radius: 9px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17.58px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #6B6B6B;
+    cursor: pointer;
+}
