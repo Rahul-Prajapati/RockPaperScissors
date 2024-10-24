@@ -45,9 +45,17 @@ paper.addEventListener('click',findwinner);
 
 let playagain = document.querySelector('.btn-againPlay');
 
+let againstmessage = document.querySelector('.againstmessage');
+let nextbtn = document.getElementById('nextBtn');
+
 playagain.addEventListener('click', () => {
+    resultMessages.classList.add('visibility'); 
+
     resultDiv.classList.add('hidden');
     choosediv.classList.remove('hidden');
+
+    againstmessage.classList.remove('hidden');
+    nextbtn.classList.add('hidden');
 })
 
 
@@ -102,9 +110,9 @@ let checkWinner = (UserValue, ComputerValue) => {
 
 let showResult = (winner) =>{
     let winnerMessage = document.querySelector('.winner-messages'); 
-    let againstmessage = document.querySelector('.againstmessage');
+    // let againstmessage = document.querySelector('.againstmessage');
     let btntext = document.querySelector('.btn-againPlay');
-    let nextbtn = document.getElementById('nextBtn');
+    // let nextbtn = document.getElementById('nextBtn');
     
     if(winner == 'WIN' ){   
         winnerMessage.innerHTML ="YOU WIN";
@@ -125,12 +133,14 @@ let showResult = (winner) =>{
 
         localStorage.setItem("ComputerScore", Score);
         ComputerScoreE.textContent  = Score;
-        resultMessages.classList.remove('hidden');
+        againstmessage.classList.remove('hidden'); 
 
     } else{
         winnerMessage.innerHTML ="TIE UP";
         againstmessage.classList.add('hidden');
         btntext.innerHTML ='REPLAY';
     }
+
+    resultMessages.classList.remove('visibility'); 
 }
 
