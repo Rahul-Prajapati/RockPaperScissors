@@ -74,7 +74,7 @@ body {
 
 .header-right p {
     align-self: center;
-    justify-content: center;
+    /* justify-content: center; */
     color: #656565;
     font-size: 17px;
     font-weight: 600;
@@ -143,6 +143,9 @@ body {
     align-items: center;
     cursor: pointer;
     z-index: 2;
+
+    top: 90px;
+    left: 89px;
 }
 
 .scissors img {
@@ -285,6 +288,8 @@ li::marker {
     text-align: center;
     color: white;
     z-index: 1;
+    top: 36px;
+    left: 116px;
 }
 
 .bg-win3 {
@@ -293,12 +298,13 @@ li::marker {
     align-items: center;
     width: 350px;
     height: 350px;
-    top: 310px;
-    left: 218px;
-    background: #2E9A2563;
     border-radius: 50%;
-    box-shadow: 0px 1px 62px 0px #00000021;
+}
 
+.win3bgstyle{
+    box-shadow: 0px 1px 62px 0px #00000021;
+    background: #2E9A2563;
+    opacity: .39;
 }
 
 .bg-win2 {
@@ -307,11 +313,13 @@ li::marker {
     align-items: center;
     width: 300px;
     height: 300px;
-    top: 335px;
-    left: 240px;
-    background: #1DA82BC9;
     border-radius: 50%;
 
+}
+
+.win2bgstyle{
+    background: #1DA82BC9;
+    opacity: .79;
 }
 
 .bg-win1 {
@@ -320,14 +328,13 @@ li::marker {
     align-items: center;
     width: 250px;
     height: 250px;
-    top: 360px;
-    left: 265px;
-    gap: 0px;
-    opacity: 1;
-    background: #3B6720;
     border-radius: 50%;
-    margin-top: 5px;
+    margin-top: 28px;
+}
 
+.win1bgstyle{
+    background: #3B6720;
+    opacity: 1;
 }
 
 .resultMessages {

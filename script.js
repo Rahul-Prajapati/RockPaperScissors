@@ -48,7 +48,15 @@ let playagain = document.querySelector('.btn-againPlay');
 let againstmessage = document.querySelector('.againstmessage');
 let nextbtn = document.getElementById('nextBtn');
 
+const bgWin3 = document.querySelectorAll('.bg-win3');        ///////////
+    const bgWin2 = document.querySelectorAll('.bg-win2');       //////////////
+    const bgWin1 = document.querySelectorAll('.bg-win1');
+
 playagain.addEventListener('click', () => {
+    bgWin3.forEach(div => div.classList.remove('win3bgstyle'));     ////////
+    bgWin2.forEach(div => div.classList.remove('win2bgstyle'));     ////////
+    bgWin1.forEach(div => div.classList.remove('win1bgstyle'));     ////////
+
     resultMessages.classList.add('visibility'); 
 
     resultDiv.classList.add('hidden');
@@ -124,6 +132,10 @@ let showResult = (winner) =>{
         UserScoreE.textContent  = Score;
         nextbtn.classList.remove('hidden');
 
+        bgWin3[0].classList.add('win3bgstyle');     /////
+        bgWin2[0].classList.add('win2bgstyle');     /////
+        bgWin1[0].classList.add('win1bgstyle');     /////
+
     }
     else if( winner == 'COMPUTER'){
         winnerMessage.innerHTML ="YOU LOST";
@@ -134,6 +146,10 @@ let showResult = (winner) =>{
         localStorage.setItem("ComputerScore", Score);
         ComputerScoreE.textContent  = Score;
         againstmessage.classList.remove('hidden'); 
+
+        bgWin3[1].classList.add('win3bgstyle');     /////
+        bgWin2[1].classList.add('win2bgstyle');     /////
+        bgWin1[1].classList.add('win1bgstyle');     /////
 
     } else{
         winnerMessage.innerHTML ="TIE UP";
